@@ -77,19 +77,11 @@ export class HomeComponent implements OnInit {
         label: 'Edit Attendance'
       }]
     }, {
-      component: 'TimetableComponent',
+      component: 'AcademicTimetableComponent',
       route: 'timetable',
       icon: 'watch_later',
       label: 'Timetable',
-      children: [{
-        component: 'AcademicTimetableComponent',
-        route: 'academic-timetable',
-        label: 'Class Timetable'
-      }, {
-        component: 'AcademicCalenderComponent',
-        route: 'academic-calender',
-        label: 'Class Calender'
-      }]
+      children: []
     }, {
       component: 'PaymentComponent',
       route: 'payment',
@@ -159,21 +151,13 @@ export class HomeComponent implements OnInit {
       label: 'Attendance',
       children: []
     },
-      //   {
-      //   component: 'TimetableComponent',
-      //   route: 'timetable',
-      //   icon: 'watch_later',
-      //   label: 'Timetable',
-      //   children: [{
-      //     component: 'AcademicTimetableComponent',
-      //     route: 'academic-timetable',
-      //     label: 'Class Timetable'
-      //   }, {
-      //     component: 'AcademicCalenderComponent',
-      //     route: 'academic-calender',
-      //     label: 'Class Calender'
-      //   }]
-      // },
+        {
+        component: 'AcademicTimetablesComponent',
+        route: 'timetable',
+        icon: 'watch_later',
+        label: 'Timetable',
+        children: []
+      },
       {
         component: 'PaymentComponent',
         route: 'payment',
